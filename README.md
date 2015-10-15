@@ -12,6 +12,7 @@ main page
 
 Create new game page
 	-> game name
+	-> game type (initial version would only have drunken game)
 	-> drinks included
 	-> location
 		-> auto detect or pick a point from map view
