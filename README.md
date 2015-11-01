@@ -56,3 +56,6 @@ Game room page (id, host_id, join_game_id, other_peoples_id)
 use pin for claiming host
 use another pin to let people join game (only host knows the pin) , the same pin is also for taking photo
 game will automatically end if no status update for 2 hours.
+
+#installation
+clone the repo and run it with meteor
