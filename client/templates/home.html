@@ -1,0 +1,11 @@
+<template name="Home">
+  {{#contentFor "headerTitle"}} 
+    <h1 class="title">{{> ionIcon icon="beer"}}&nbsp;The Drinking Game</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <a href='./add-game' class="button button-clear">{{> ionIcon icon="ios-plus-empty"}}</a>
+  {{/contentFor}}
+
+  {{> GameRoomList}}
+</template>
