@@ -28,3 +28,5 @@ aldeed:collection2
 aldeed:autoform
 meteoric:autoform-ionic
 yogiben:autoform-map
+momentjs:moment
+mdg:geolocation

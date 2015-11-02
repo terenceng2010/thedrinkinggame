@@ -16,6 +16,9 @@ Template.GameRoomList.rendered = function () {
 
 Template.GameRoomList.helpers({
   games: function () {
-    return Games.find();
+    return Games.find({}, {sort: {createAt:-1}});
+  },
+  createSince: function(createAt){
+    return moment(createAt).fromNow();
   }
 });

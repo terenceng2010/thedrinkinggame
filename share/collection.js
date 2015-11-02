@@ -1,20 +1,5 @@
 DRINKS =['Box Wine','Beer','Red Wine','Sake','Whiskey','Soft Drinks'];
 
-GeocoordsSchema = new SimpleSchema({
-  lng: {
-    type : Number,
-    decimal: true,
-    min: -180,
-    max: 180
-  }, 
-  lat: {
-    type : Number,
-    decimal: true,
-    min: -90,
-    max: 90
-  }
-});
-
 Games = new Mongo.Collection('games');
 
 Games.attachSchema(new SimpleSchema({
@@ -25,8 +10,20 @@ Games.attachSchema(new SimpleSchema({
 	description:{
 		type:String
 	},
-	coordinate:{
-		type:GeocoordsSchema
+	location:{
+		type:[Number],
+		decimal:true,
+		autoform:{
+			type:'map',
+			afFieldInput:{
+				mapType:'roadmap',
+				geolocation:true,
+				autolocate:true,
+				searchBox:false,
+				zoom:14
+			}
+			
+		}
 	},
 	drinks:{
 		type: [String]

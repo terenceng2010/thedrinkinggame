@@ -1,14 +1,19 @@
 <template name="GameRoomList">
  
+ 
   {{#ionView}}
-    {{#ionContent}}
-      Game Room List
+    {{#ionContent class="has-subheader"}}
+
       {{#ionList}}
         {{#each games}}
-          {{#ionItem path="contacts.show" buttonRight=true avatar=true class="item-icon-right"}}
-            <img src="{{avatarUrl}}">
-            {{name}}<br>{{description}}<br>{{drinks}}<br><img src='https://maps.googleapis.com/maps/api/staticmap?center={{coordinate.lat}},{{coordinate.lng}}&zoom=17&size=100x100&scale=2&key=AIzaSyDMZ6SrSVzgg-hdixhmg5NQSahrN0CVGB4'/>
-            {{> ionIcon icon="ios-arrow-forward" class="positive"}}
+          {{#ionItem avatar=true }}
+                   
+            <img src='https://maps.googleapis.com/maps/api/staticmap?markers={{location.[1]}},{{location.[0]}}&zoom=14&size=100x100&scale=1&key=AIzaSyDMZ6SrSVzgg-hdixhmg5NQSahrN0CVGB4'/>
+            <h2>{{name}}</h2>
+            <p>descr:&nbsp;{{description}}</p>
+            <p>{{drinks}}</p>
+            <p>{{createSince createAt}}</p>
+           
           {{/ionItem}}
         {{/each}}
       {{/ionList}}
