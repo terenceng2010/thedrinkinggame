@@ -10,7 +10,11 @@
   {{#ionView}}
     {{#ionContent}}
     <!-- <button class='getCurrentLocation'>Get my current location</button>-->
-     {{> quickForm collection="Games" id="addGameForm" type="insert" omitFields="createAt" template="ionic"}}
+     {{#if isLogin}}
+     {{> quickForm collection="Games" id="addGameForm" type="insert" omitFields="createAt,createBy" template="ionic"}}
+     {{else}}
+     To add a game, please login first
+     {{/if}}
     {{/ionContent}}
   {{/ionView}}
 </template>

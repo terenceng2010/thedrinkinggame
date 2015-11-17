@@ -2,6 +2,14 @@ DRINKS =['Box Wine','Beer','Red Wine','Sake','Whiskey','Soft Drinks'];
 
 Games = new Mongo.Collection('games');
 
+Games.allow({
+	
+	insert: function(){
+		return true;
+	}
+	
+})
+
 Games.attachSchema(new SimpleSchema({
 	
 	name:{
@@ -36,6 +44,12 @@ Games.attachSchema(new SimpleSchema({
 	},
 	publicGame:{
 		type: Boolean
+	},
+	createBy:{
+		type:String,
+		autoValue:function(){
+			return Meteor.user().profile.name;
+		}
 	}
 	
 	

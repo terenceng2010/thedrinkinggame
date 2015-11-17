@@ -17,3 +17,21 @@ Template.AddGame.events(
   
 );
 
+Template.AddGame.rendered = function () {
+
+};
+
+Template.AddGame.helpers({
+  
+  isLogin: function(){
+    if(Meteor.user()){
+         console.log("User is logged in");
+      return true;
+    }else{
+       console.log("User is not logged in");
+      return false;
+    }
+  }
+  
+  
+});
