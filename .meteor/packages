@@ -17,9 +17,6 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 iron:router
-fourseven:scss@2.0.0
-meteoric:ionic-sass
-meteoric:ionicons-sass
 meteoric:ionic
 aldeed:simple-schema
 aldeed:collection2
@@ -30,3 +27,6 @@ momentjs:moment
 mdg:geolocation
 accounts-ui
 accounts-facebook
+fourseven:scss
+hashwin:ionic-sass
+hashwin:ionicons-sass

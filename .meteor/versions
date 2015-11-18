@@ -34,8 +34,10 @@ ejson@1.0.7
 es5-shim@4.1.14
 facebook@1.2.2
 fastclick@1.0.7
-fourseven:scss@2.1.1
+fourseven:scss@3.4.1
 geojson-utils@1.0.4
+hashwin:ionic-sass@0.3.3
+hashwin:ionicons-sass@0.1.9
 hot-code-push@1.0.0
 html-tools@1.0.5
 htmljs@1.0.5
@@ -60,8 +62,6 @@ meteor@1.1.10
 meteor-base@1.0.1
 meteoric:autoform-ionic@0.1.6
 meteoric:ionic@0.1.19
-meteoric:ionic-sass@0.1.9
-meteoric:ionicons-sass@0.1.6
 minifiers@1.1.7
 minimongo@1.0.10
 mobile-experience@1.0.1
